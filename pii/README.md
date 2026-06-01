@@ -15,9 +15,10 @@ The rules cascade top-down — the first matching rule wins:
 1. **All numbers get redacted.**
 2. **All inline images get blurred.**
 3. **All loaded images get replaced with placeholders.**
-4. **All text longer than `max_words_len` gets redacted** → long strings are
+4. **All URLs/HREFs get stripped of queries and filtered using a strict allow list.**
+5. **All text longer than `max_words_len` gets redacted** → long strings are
    presumed a PII-risk and force-redacted wholesale.
-5. **Everything else** → gated through a strict allowlist, with regex scrubbing
+6. **Everything else** → gated through a strict allowlist, with regex scrubbing
    layered on top of survivors (todo).
 
 ## Pipeline shape
