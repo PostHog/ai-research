@@ -1,0 +1,3 @@
+{"type": "click", "target": "button#submit", "x": 142, "y": 87, "timestamp": 1734567890123}
+{"type": "input", "field": "email", "value": "user@example.com", "timestamp": 1734567890456}
+{"type": "navigation", "from": "/home", "to": "/dashboard", "duration_ms": 234}
